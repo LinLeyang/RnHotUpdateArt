@@ -37,8 +37,11 @@ react-native bundle --platform android --dev false --entry-file ./bus_a.js --bun
 
 #### 当线上出现问题时：流程和开发时基本类似
 1.修改对应的js文件，修正问题，测试完成后
+
 2.和正式流程一样生成全量的total.bundle
+
 3.和正式的一样生成patch.bundle并压缩成patch.zip
+
 4.交由服务端提供下载更新服务
 
 #### 用户使用时的流程解释
@@ -106,7 +109,7 @@ private void mergePatch(final String businessName, final String version) {
 ```
 6.清空为补丁包创建的patch文件夹所有内容
 
-###如何接入热更新库
+### 如何接入热更新库
 
 只需要把rnhotupdatelibrary拷贝到自己新建的一个model里面，或者打成aar引入到工程即可
 
