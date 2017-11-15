@@ -1,0 +1,35 @@
+@@ -14397,27 +14397,42 @@
+ n(e,
+-r
++t
+ ,
+-a
++n
+ ,
+-i
++l
+ )%7B
++%22use strict%22;
+ var 
+-l
++r
+ =
+-r
++t
+ (12)
+-;
++,o=
+ babe
+@@ -14466,15 +14466,1064 @@
+ ult(
++r),s=t(38),a=function(e)%7Bfunction t()%7Breturn babe
+ l
++Helpers.classCallCheck(this,t
+ )
++,babelHelpers.possibleConstructorReturn(this,(t.__proto__%7C%7CObject.getPrototypeOf(t)).apply(this,arguments))%7Dreturn babelHelpers.inherits(t,e),babelHelpers.createClass(t,%5B%7Bkey:%22pressSelectContract%22,value:function()%7Bs.NativeModules.R2NModule.handleMessage(%22I press button.%22,function(e)%7Bconsole.log(e)%7D)%7D%7D,%7Bkey:%22componentWillMount%22,value:function()%7Bs.DeviceEventEmitter.addListener(%22AndroidToRNMessage%22,this.handleAndroidMessage.bind(this))%7D%7D,%7Bkey:%22handleAndroidMessage%22,value:function(e)%7Bconsole.log(e)%7D%7D,%7Bkey:%22render%22,value:function()%7Bvar e=this.props.bundle
+ ;r
++eturn o.default.createElement
+ (
+-38
++s.View,%7Bstyle:i.container%7D,o.default.createElement(s.Text,%7Bstyle:i.hello,onPress:this.pressSelectContract%7D,%22BUS_A_patch%22),o.default.createElement(s.Text,%7Bstyle:i.hello%7D,e))%7D%7D%5D),t%7D(o.default.Component),i=s.StyleSheet.create(%7Bcontainer:%7Bflex:1,justifyContent:%22center%22%7D,hello:%7BfontSize:20,textAlign:%22center%22,margin:10%7D%7D);s.AppRegistry.registerComponent(%22RnHotUpdateArt%22,function()%7Breturn a%7D
+ )%7D,0
