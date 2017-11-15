@@ -1,6 +1,6 @@
 基于Google diff_match_patch 的增量热更新框架
-
-###流程图
+===========
+### 流程图
 
 ![Rn热更新流程图](http://ozckzyh1u.bkt.clouddn.com/rn_hot_update.png)
 
@@ -16,9 +16,9 @@ patch.bundle:和diff没有本质区别，用于区分是用于更新的补丁还
 
 这里是我的框架定义的，可以修改框架自己定义
 
-###流程的具体说明
+### 流程的具体说明
 
-####开发完成之后：
+#### 开发完成之后：
 1.首先我们要按照rn打包的命令生成common.bundle至assets文件夹下，要注意没有assets文件夹的需要手动创建，否则会报错。其中的blank.js是一个空的js文件只引用一定要使用的react核心类库。
 
 ```
@@ -35,13 +35,13 @@ react-native bundle --platform android --dev false --entry-file ./bus_a.js --bun
 
 4.按照正常流程打App的正式包即可
 
-####当线上出现问题时：流程和开发时基本类似
+#### 当线上出现问题时：流程和开发时基本类似
 1.修改对应的js文件，修正问题，测试完成后
 2.和正式流程一样生成全量的total.bundle
 3.和正式的一样生成patch.bundle并压缩成patch.zip
 4.交由服务端提供下载更新服务
 
-####用户使用时的流程解释
+#### 用户使用时的流程解释
 1.用于打开rn页面时我们在加载之前会开一个异步的线程，我们后续再说
 
 2.不管需不需要更新，都需要读取_total（本地有去本地获取，如果没有则合并assets里面的common 和 diff文件 生成到本地存储）
